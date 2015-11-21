@@ -8,8 +8,13 @@ import java.text.DecimalFormat;
  * Created by Alex on 21.11.2015.
  */
 
-@WebService(name = "calculator", targetNamespace = "alexggg99")
+@WebService(
+        portName = "CalculatorPort",
+        serviceName = "CalculatorService",
+        targetNamespace = "http://alexggg99.com/wsdl")
 public class CalculatorImpl implements Calculator {
+
+    SaveToDB saver = new SaveToDB();
 
     @Override
     @WebMethod
@@ -32,10 +37,10 @@ public class CalculatorImpl implements Calculator {
     }
 
     private double round(double input){
-        double time = 200.3456;
         DecimalFormat df = new DecimalFormat("#.##");
-        time = Double.valueOf(df.format(time));
-        return time;
+        input = Double.valueOf(df.format(input));
+        saver.save(input);
+        return input;
     }
 
 }

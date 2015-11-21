@@ -3,21 +3,27 @@
   <ID>JAVA</ID>
   <OriginalElement>com.alexggg99</OriginalElement>
   <nodes>
-    <node x="10.0" y="0.0">com.alexggg99.Calculator</node>
-    <node x="0.0" y="123.0">com.alexggg99.CalculatorImpl</node>
-    <node x="0.0" y="263.0">com.alexggg99.SaveToDB</node>
+    <node x="0.0" y="0.0">com.alexggg99.Calculator</node>
+    <node x="160.16666666666663" y="123.0">com.alexggg99.CalculatorImpl</node>
+    <node x="260.0" y="11.0">com.alexggg99.SaveToDB</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.alexggg99.CalculatorImpl" target="com.alexggg99.Calculator">
-      <point x="0.0" y="-47.5" />
+      <point x="-86.66666666666669" y="-47.5" />
+      <point x="203.49999999999994" y="98.0" />
+      <point x="120.0" y="98.0" />
       <point x="0.0" y="36.5" />
     </edge>
+    <edge source="com.alexggg99.CalculatorImpl" target="com.alexggg99.SaveToDB">
+      <point x="86.66666666666669" y="-47.5" />
+      <point x="376.8333333333333" y="98.0" />
+      <point x="370.25" y="98.0" />
+      <point x="36.75" y="25.5" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="107.5" y="91.0" />
-  <SelectedNodes>
-    <node>com.alexggg99.SaveToDB</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="1.0" x="210.5" y="157.0" />
+  <SelectedNodes />
   <Categories>
     <Category>Methods</Category>
   </Categories>
