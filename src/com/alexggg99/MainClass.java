@@ -7,6 +7,8 @@ public class MainClass {
 
     public static void main(String[] args){
         System.out.println("Main class");
+        CalculatorImpl calc = new CalculatorImpl();
+        calc.sum(2147483648, 32);
     }
 
 }
